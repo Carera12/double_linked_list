@@ -23,6 +23,12 @@ namespace double_linked_list
     class DoubleLinkedList
     {
         Node START;
+
+        //constructor
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
     }
     class Program
     {
