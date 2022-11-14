@@ -82,6 +82,7 @@ namespace double_linked_list
                 return;
             }
             current.prev = newNode;
+            previous.next = newNode;
         }
     }
     class Program
