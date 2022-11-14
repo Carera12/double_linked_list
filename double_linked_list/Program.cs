@@ -20,6 +20,10 @@ namespace double_linked_list
         public Node prev;
 
     }
+    class DoubleLinkedList
+    {
+
+    }
     class Program
     {
         static void Main(string[] args)
