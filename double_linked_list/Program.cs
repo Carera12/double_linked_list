@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace double_linked_list
 {
-    internal class Program
+    class Node
+    {
+        /*Node class represent the node of doubly linked list.
+         * It consist of the information part and links to
+         * its succeeding and preceeding
+         * in the of next and previous */
+
+    }
+    class Program
     {
         static void Main(string[] args)
         {
