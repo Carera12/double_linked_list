@@ -13,7 +13,7 @@ namespace double_linked_list
          * its succeeding and preceeding
          * in the of next and previous */
         public int noMhs;
-        public int name;
+        public String name;
         //point to the succedung node
         public Node next;
         //point to the precceeding node
@@ -40,6 +40,23 @@ namespace double_linked_list
             Node newNode = new Node();
             newNode.noMhs = nim;
             newNode.name = nm;
+
+            //check if the list empty
+            if (START == null || nim <= START.noMhs)
+            {
+                if ((START != null) && (nim == START.noMhs))
+                {
+                    Console.WriteLine("\nDupiclate number not allowed");
+                    return;
+                }
+                newNode.next = START;
+                if (START != null)
+                    START.prev = newNode;
+                newNode.prev = null;
+                START = newNode;
+                return;
+            }
+            
         }
     }
     class Program
