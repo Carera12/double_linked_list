@@ -73,6 +73,15 @@ namespace double_linked_list
              ** between wich the new node is to be insarted.*/
             newNode.next = current;
             newNode.prev = previous;
+
+            //if the node is to be instarted at the end of the list
+            if (current == null)
+            {
+                newNode.next = null;
+                previous.next = newNode;
+                return;
+            }
+            current.prev = newNode;
         }
     }
     class Program
